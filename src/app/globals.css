@@ -1,0 +1,76 @@
+/* src/app/globals.css - Tailwind CSS v4 Setup */
+
+@import "tailwindcss";
+
+/* ==================================================================
+   Theme Configuration (v4 CSS-first approach)
+   ================================================================== */
+@theme {
+  /* Fonts - Integrates directly with Tailwind utilities like font-sans, font-serif */
+  --font-family-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-family-serif: var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  /* Optional: Custom font sizes, colors, etc. can go here */
+}
+
+/* Define CSS variables for fonts (injected by next/font in layout.tsx) */
+:root {
+  --font-montserrat: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-playfair: 'Playfair Display', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  /* Runalto uses @font-face below, so no variable needed unless you add it */
+}
+
+/* ==================================================================
+   Custom @font-face for Runalto (local/custom font)
+   ================================================================== */
+/* Place font files in public/fonts/ */
+@font-face {
+  font-family: 'Runalto';
+  src: url('/fonts/runalto-regular.woff2') format('woff2'),
+       url('/fonts/runalto-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Runalto';
+  src: url('/fonts/runalto-italic.woff2') format('woff2'),
+       url('/fonts/runalto-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* If you have bold/ other weights, add similar blocks */
+
+/* ==================================================================
+   Custom Font Utility Classes (for easy use in JSX)
+   ================================================================== */
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+.font-runalto {
+  font-family: 'Runalto', var(--font-family-serif); /* Fallback to theme serif */
+}
+
+/* Optional: Override defaults if needed */
+.font-sans {
+  font-family: var(--font-family-sans);
+}
+
+.font-serif {
+  font-family: var(--font-family-serif);
+}
+
+/* ==================================================================
+   Optional: Global Enhancements
+   ================================================================== */
+html {
+  scroll-behavior: smooth;
+}
