@@ -33,6 +33,9 @@ export default function Hero() {
           pixel-perfect, luxurious interfaces. High-end Next.js solutions for startups,
           e-commerce, agencies, and businesses of all kinds.
         </h5>
+        <p className="mt-4 text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 tracking-tight leading-relaxed font-montserrat italic">
+          "Engineering seamless interactions where complex functionality meets effortless usability."
+        </p>
 
         {/* Buttons – Closer Together, Smaller Padding */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
