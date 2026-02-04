@@ -30,7 +30,7 @@ export default function Hero() {
         </h1>
 
         {/* Paragraph: Increased size, Same Font */}
-        <h5 className="mt-4 text-lg sm:text-xl md:text-2xl text-gray-300 font-light max-w-3xl mx-auto leading-tight">
+        <h5 className="mt-4 text-lg sm:text-xl md:text-1xl text-gray-300 font-light max-w-3xl mx-auto leading-tight">
           Building elegant, robust & scalable web experiences; from database architecture to
           pixel-perfect, luxurious interfaces. High-end Next.js solutions for startups,
           e-commerce, agencies, and businesses of all kinds.
