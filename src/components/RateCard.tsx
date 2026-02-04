@@ -88,7 +88,8 @@ const services: Service[] = [
 
 export default function RateCard() {
   return (
-    <section id="pricing" className="py-16 bg-[#fdfaf7]">
+    // Only changed id to "solutions" and added scroll-mt-20 to fix the button issue
+    <section id="solutions" className="py-16 bg-[#fdfaf7] scroll-mt-20">
       <div className="px-5 sm:px-8 lg:px-10">
         {/* Header */}
         <div className="text-center mb-10">
